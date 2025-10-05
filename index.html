@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
+  <title>Frontend Mentor | Calculator app</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="main">
+    <div class="container">
+        <header class="head">
+          <h3>calc</h3>
+          <div class="theme-switcher">
+            <div class="theme-text">THEME</div>
+            <div class="toggle-switch">
+              <div class="numbers">
+                <span class="number">1</span>
+                <span class="number">2</span>
+                <span class="number">3</span>
+              </div>
+              <div class="theme-controller" id="toggle-button-container">
+                <div class="circle one" id="toggle-button"></div>
+                <div class="circle two"></div>
+                <div class="circle three"></div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="display" id="display"></div>
+        <div class="buttons" id="buttons-container">
+          <button class="btn" id="sev">7</button>
+          <button class="btn" id="8">8</button>
+          <button class="btn operator" id="9">9</button>
+          <button class="del" id="del">DEL</button>
+          <button class="btn" id="4">4</button>
+          <button class="btn" id="5">5</button>
+          <button class="btn" id="6">6 </button>
+          <button class="btn operator" id="plus">+</button>
+          <button class="btn" id="1">1</button>
+          <button class="btn" id="2">2</button>
+          <button class="btn" id="3">3</button>
+          <button class="btn operator" id="subtract">-</button>
+          <button class="btn" id="point">.</button>
+          <button class="btn" id="0">0</button>
+          <button class="btn operator" id="/">/</button>
+          <button class="btn operator" id="*">*</button>
+          <button class="btn reset" id="reset">RESET</button>
+          <button class="equality" id="equal">=</button>
+        </div>
+    </div>
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Horleyoung</a>.
+    </footer>    
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

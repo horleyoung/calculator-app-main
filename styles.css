@@ -1,0 +1,217 @@
+body {
+    font-family: 'Spartan', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main {
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(222, 26%, 31%);
+}
+/* main theme 2 */
+.main-two {
+    background-color: hsl(0, 0%, 90%);
+}
+/* main theme 3 */
+.main-three {
+    background-color: hsl(268, 75%, 9%);
+}
+
+.container {
+    margin: auto;
+    padding: 20px;
+    max-width: 400px;
+}
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-bottom: 10px;
+}
+.head-two {
+    color: hsl(60, 10%, 19%);
+}
+.head-three {
+    color: hsl(52, 100%, 62%);
+}
+.theme-switcher {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 12px;
+}
+.theme-text {
+    font-size: 12px;
+    font-weight: bold;
+}
+.toggle-switch {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    position: relative;
+    bottom: 9px;
+}
+.numbers {
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: 700;
+}
+.theme-controller {
+    width: 65px;
+    height: 20px;
+    background-color: hsl(223, 31%, 20%);
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.theme-controllertwo {
+    background-color: hsl(0, 5%, 81%);
+}
+.theme-controllerthree {
+    background-color: hsl(268, 71%, 12%);
+}
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: hsl(6, 63%, 50%);
+}
+.one {
+    position: relative;
+    left: 5px;
+}
+/* theme-two */
+.two {
+    /* display: none; */
+    position: relative;
+    left: 24px;
+    background-color: hsl(25, 98%, 40%);
+}
+/* theme-three */
+.three {
+    /* display: none; */
+    position: relative;
+    left: 42px;
+    background-color: hsl(176, 100%, 44%);
+}
+.hidden {
+    display: none;
+}
+.display {
+    background-color: hsl(224, 36%, 15%);
+    color: white;
+    font-size: 32px;
+    text-align: right;
+    height: 12vh;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.display-two {
+    background-color: hsl(0, 0%, 93%);
+    color: hsl(60, 10%, 19%);
+}
+.display-three {
+    background-color: hsl(268, 71%, 12%);
+    color: hsl(52, 100%, 62%);
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    background-color: hsl(223, 31%, 20%);
+    padding: 20px;
+    border-radius: 12px;
+}
+/* theme 2 */
+.buttons-two {
+    background-color: hsl(0, 5%, 81%);
+}
+.buttons-three {
+    background-color: hsl(268, 71%, 12%);
+}   
+.btn, .equality, .del {
+    border: none;
+    border-radius: 8px; 
+}
+/* theme 1 */
+.btn {
+    padding: 7px 0;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: hsl(30, 25%, 89%);
+    color: hsl(221, 14%, 31%);
+    box-shadow: 0 3px hsl(28, 16%, 65%);
+    font-weight: 700;
+}
+/* theme 2 */
+.btn-two {
+    background-color: hsl(0, 0%, 90%);
+    box-shadow: 0 3px hsl(35, 11%, 61%);
+    color: hsl(60, 10%, 19%);
+}
+/* theme 3 */
+.btn-three {
+    background-color: hsl(268, 47%, 21%);
+    box-shadow: 0 3px hsl(290, 70%, 36%);
+    color: hsl(52, 100%, 62%);
+}   
+.del, .reset{
+    font-size: 20px;
+    box-shadow: 0 3px hsl(224, 28%, 35%);
+}
+.del {
+    background-color: hsl(225, 21%, 49%);
+    color: white;
+}
+.del-two {
+    background-color: hsl(185, 42%, 37%);
+    color: white;
+    box-shadow: 0 3px hsl(185, 58%, 25%);
+}
+.del-three {
+    background-color: hsl(281, 89%, 26%);
+    color: white;
+    box-shadow: 0 3px hsl(285, 91%, 52%);
+}
+.reset {
+    background-color: hsl(225, 21%, 49%);
+    color: white;
+    grid-column: span 2;
+}
+.reset-two {
+    background-color: hsl(185, 42%, 37%);
+    color: white;
+    box-shadow: 0 3px hsl(185, 58%, 25%);
+}
+.reset-three {
+    background-color: hsl(281, 89%, 26%);
+    color: white;
+    box-shadow: 0 3px hwb(285 8% 4%);
+}
+.equality {
+    border: none;
+    background-color: hsl(6, 63%, 50%);
+    box-shadow: 0 3px hsl(6, 70%, 34%);
+    color: white;
+    grid-column: span 2;
+}
+.equality-two {
+    background-color: hsl(25, 98%, 40%);
+    box-shadow: 0 3px hsl(25, 99%, 27%);
+}
+.equality-three {
+    background-color: hsl(176, 100%, 44%);
+    box-shadow: 0 3px hsl(177, 92%, 70%);
+    color: hsl(198, 20%, 13%);
+}  
+.attribution {
+    font-size: 11px;
+    text-align: center;
+} 
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
