@@ -131,14 +131,48 @@ button:active,
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
+    overflow-y: auto;
+    overflow-wrap: break-word;
+    word-wrap: break-word; 
+    white-space: normal;   
 }
+/* Scrollbar styling for the display area */
+.display::-webkit-scrollbar {
+  width: 5px;  
+}
+
+/* Scrollbar track (background) */
+.display::-webkit-scrollbar-track {
+  background: hsl(223, 31%, 20%); /* match your theme background */
+  border-radius: 10px;
+}
+
+/* Scrollbar thumb (the draggable part) */
+.display::-webkit-scrollbar-thumb {
+  background: hsl(224, 21%, 49%); /* match your main accent color */
+  border-radius: 10px;
+}
+
 .display-two {
     background-color: hsl(0, 0%, 93%);
     color: hsl(60, 10%, 19%);
 }
+.display-two::-webkit-scrollbar-track {
+  background: hsl(0, 0%, 90%); 
+}
+.display-two::-webkit-scrollbar-thumb {
+  background: hsl(185, 42%, 37%); 
+}
+
 .display-three {
     background-color: hsl(268, 71%, 12%);
     color: hsl(52, 100%, 62%);
+}
+.display-three::-webkit-scrollbar-track {
+  background: hsl(268, 75%, 9%);
+}
+.display-three::-webkit-scrollbar-thumb {
+  background: hsl(281, 89%, 26%); 
 }
 .buttons {
     display: grid;
