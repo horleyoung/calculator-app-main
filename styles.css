@@ -73,6 +73,28 @@ body {
 .theme-controllerthree {
     background-color: hsl(268, 71%, 12%);
 }
+
+/* Removes blue highlight / flash on mobile tap */
+* {
+  -webkit-tap-highlight-color: transparent; 
+}
+/* Remove blue background and outline when clicking buttons or circles */
+button,
+.theme-controller {
+  outline: none;           
+  box-shadow: none;
+}
+
+button:focus,
+.theme-controller:focus {
+  outline: none;  
+}
+
+button:active,
+.theme-controller:active {
+  background-color: inherit; 
+  box-shadow: none;         
+}
 .circle {
     width: 15px;
     height: 15px;
@@ -215,3 +237,4 @@ body {
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
